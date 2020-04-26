@@ -42,11 +42,15 @@ export const env: Env = cleanEnv(
 
 		DEFAULT_LANGUAGE: str({ default: 'en-US' }),
 
-		SERVICES_ENDPOINT: str({ default: 'http://45.55.36.130:5500' }),
-		HTTPS_SERVICES_ENDPOINT: str({ default: 'https://45.55.36.130:5501' }),
-		GQL_ENDPOINT: str({ default: 'http://45.55.36.130:5555/graphql' }),
+		SERVICES_ENDPOINT: str({ default: 'https://api.kawkab.systems:5500' }),
+		HTTPS_SERVICES_ENDPOINT: str({
+			default: 'https://api.kawkab.systems:5501',
+		}),
+		GQL_ENDPOINT: str({
+			default: 'https://api.kawkab.systems:5555/graphql',
+		}),
 		GQL_SUBSCRIPTIONS_ENDPOINT: str({
-			default: 'ws://45.55.36.130:5050/subscriptions',
+			default: 'wss://api.kawkab.systems:5050/subscriptions',
 		}),
 
 		AUTH_LOGO: str({ default: 'assets/img/ever-logo.svg' }),
