@@ -42,11 +42,11 @@ export const env: Env = cleanEnv(
 
 		DEFAULT_LANGUAGE: str({ default: 'en-US' }),
 
-		SERVICES_ENDPOINT: str({ default: 'http://45.55.40.130:5500' }),
-		HTTPS_SERVICES_ENDPOINT: str({ default: 'https://45.55.40.130:5501' }),
-		GQL_ENDPOINT: str({ default: 'http://45.55.40.130:5555/graphql' }),
+		SERVICES_ENDPOINT: str({ default: 'http://45.55.36.130:5500' }),
+		HTTPS_SERVICES_ENDPOINT: str({ default: 'https://45.55.36.130:5501' }),
+		GQL_ENDPOINT: str({ default: 'http://45.55.36.130:5555/graphql' }),
 		GQL_SUBSCRIPTIONS_ENDPOINT: str({
-			default: 'ws://45.55.40.130:5050/subscriptions'
+			default: 'ws://45.55.36.130:5050/subscriptions',
 		}),
 
 		AUTH_LOGO: str({ default: 'assets/img/ever-logo.svg' }),
@@ -60,12 +60,12 @@ export const env: Env = cleanEnv(
 		// For maintenance micro service. Ever maintanance API URL: https://maintenance.ever.co/status
 		SETTINGS_APP_TYPE: str({ default: 'shop-web' }),
 		SETTINGS_MAINTENANCE_API_URL: str({
-			default: ''
+			default: '',
 		}),
 
 		WEB_CONCURRENCY: num({ default: 1 }),
 		WEB_MEMORY: num({ default: 2048 }),
-		PORT: num({ default: 3000 })
+		PORT: num({ default: 3000 }),
 	},
 	{ strict: true, dotEnvPath: __dirname + '/../.env' }
 );
