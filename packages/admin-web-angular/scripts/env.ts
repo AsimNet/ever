@@ -53,7 +53,7 @@ export const env: Env = cleanEnv(
 	{
 		production: bool({ default: false }),
 
-		SERVICES_ENDPOINT: str({ default: 'https://api.kawkab.systems:5500' }),
+		SERVICES_ENDPOINT: str({ default: 'https://api.kawkab.systems:5501' }),
 		HTTPS_SERVICES_ENDPOINT: str({
 			default: 'https://api.kawkab.systems:5501',
 		}),

@@ -42,7 +42,7 @@ export const env: Env = cleanEnv(
 
 		DEFAULT_LANGUAGE: str({ default: 'en-US' }),
 
-		SERVICES_ENDPOINT: str({ default: 'https://api.kawkab.systems:5500' }),
+		SERVICES_ENDPOINT: str({ default: 'https://api.kawkab.systems:5501' }),
 		HTTPS_SERVICES_ENDPOINT: str({
 			default: 'https://api.kawkab.systems:5501',
 		}),
