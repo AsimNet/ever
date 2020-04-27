@@ -53,18 +53,20 @@ export const env: Env = cleanEnv(
 	{
 		production: bool({ default: false }),
 
-		SERVICES_ENDPOINT: str({ default: 'https://api.kawkab.systems:5501' }),
+		SERVICES_ENDPOINT: str({ default: 'http://api.kawkab.systems:5500' }),
 		HTTPS_SERVICES_ENDPOINT: str({
 			default: 'https://api.kawkab.systems:5501',
 		}),
 		GQL_ENDPOINT: str({
-			default: 'https://api.kawkab.systems:5555/graphql',
+			default: 'http://api.kawkab.systems:5555/graphql',
 		}),
 		GQL_SUBSCRIPTIONS_ENDPOINT: str({
-			default: 'wss://api.kawkab.systems:5050/subscriptions',
+			default: 'ws://api.kawkab.systems:5050/subscriptions',
 		}),
 
-		GOOGLE_MAPS_API_KEY: str({ default: '' }),
+		GOOGLE_MAPS_API_KEY: str({
+			default: 'AIzaSyAyDd9oMAzGCeH5kkmqubXaqb6VTL_pzXI',
+		}),
 
 		DEFAULT_LATITUDE: num({ default: 42.6459136 }),
 		DEFAULT_LONGITUDE: num({ default: 23.3332736 }),
