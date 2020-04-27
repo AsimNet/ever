@@ -20,6 +20,7 @@
 						"polyfills": "src/polyfills.browser.ts",
 						"assets": [
 							"src/assets",
+							"src/_redirects",
 							"src/favicon.ico",
 							"src/favicon.png",
 							{

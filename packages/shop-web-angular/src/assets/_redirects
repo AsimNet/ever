@@ -1,3 +1,0 @@
-# http and https need separate rules if you don't force_ssl!
-http://45.55.36.130/* http://45.55.36.130/:splat 200!
-
