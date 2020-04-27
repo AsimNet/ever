@@ -89,15 +89,15 @@ const entities = ServicesApp.getEntities();
 		// NOTE: this could be used inside NestJS only, not inside our services
 		TypeOrmModule.forFeature(entities),
 		SubscriptionsModule.forRoot(env.GQLPORT_SUBSCRIPTIONS),
-		// GraphQLModule.forRoot({
-		// 	typePaths: [ './**/*.graphql' ],
-		// 	installSubscriptionHandlers: true,
-		// 	debug: true,
-		// 	playground: true,
-		// 	context: ({ req, res }) => ({
-		// 		req
-		// 	})
-		// }),
+		GraphQLModule.forRoot({
+			typePaths: ['./**/*.graphql'],
+			installSubscriptionHandlers: true,
+			debug: true,
+			playground: true,
+			context: ({ req, res }) => ({
+				req,
+			}),
+		}),
 		InvitesModule,
 		DevicesModule,
 		ProductModule,
@@ -146,10 +146,7 @@ export class ApplicationModule implements NestModule, OnModuleInit {
 
 		/* Next is code which could be used to manually create GraphQL Server instead of using GraphQLModule.forRoot(...)
 
-
-
-		*/
-		const schema: GraphQLSchema = this.createSchema();
+const schema: GraphQLSchema = this.createSchema();
 		const server: ApolloServer = this.createServer(schema);
 
 		// this creates manually GraphQL subscriptions server (over ws connection)
@@ -174,6 +171,9 @@ export class ApplicationModule implements NestModule, OnModuleInit {
 				`https://127.0.0.1:${port}/graphql`
 			)
 		);
+
+		*/
+
 		log.info(
 			`GraphQL playground available at http://localhost:${port}/graphql`
 		);
