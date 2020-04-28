@@ -58,7 +58,7 @@ export const env: Env = cleanEnv(
 			default: 'https://api.kawkab.systems:5501',
 		}),
 		GQL_ENDPOINT: str({
-			default: 'http://api.kawkab.systems:5555/graphql',
+			default: 'https://graphql.kawkab.systems/graphql',
 		}),
 		GQL_SUBSCRIPTIONS_ENDPOINT: str({
 			default: 'ws://api.kawkab.systems:5050/subscriptions',
