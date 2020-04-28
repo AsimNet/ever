@@ -76,8 +76,7 @@ const entities = ServicesApp.getEntities();
 		// configure TypeORM Connection which will be possible to use inside NestJS (e.g. resolvers)
 		TypeOrmModule.forRoot({
 			type: 'mongodb',
-			host: 'localhost',
-			database: 'test',
+			url: env.DB_URI,
 			entities,
 			synchronize: true,
 			useNewUrlParser: true,
