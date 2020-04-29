@@ -53,11 +53,11 @@ export const env: Env = cleanEnv(
 			default: 'wss://api.kawkab.systems:5050/subscriptions',
 		}),
 
-		AUTH_LOGO: str({ default: 'assets/img/ever-logo.svg' }),
-		NO_INTERNET_LOGO: str({ default: 'assets/img/ever-logo.svg' }),
+		AUTH_LOGO: str({ default: 'assets/img/logo.jpg' }),
+		NO_INTERNET_LOGO: str({ default: 'assets/img/logo.jpg' }),
 
 		GOOGLE_MAPS_API_KEY: str({
-			default: 'AIzaSyCcnNlu8Bc10dWe907KTRqWXhyBvm-XOww',
+			default: 'AIzaSyDceGm3Xyev6wKEO4dz4dsn1wB6qQgeWjw',
 		}),
 
 		DELIVERY_TIME_MIN: num({ default: 30 }),

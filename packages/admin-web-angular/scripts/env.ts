@@ -65,13 +65,13 @@ export const env: Env = cleanEnv(
 		}),
 
 		GOOGLE_MAPS_API_KEY: str({
-			default: 'AIzaSyCcnNlu8Bc10dWe907KTRqWXhyBvm-XOww',
+			default: 'AIzaSyDceGm3Xyev6wKEO4dz4dsn1wB6qQgeWjw',
 		}),
 
 		DEFAULT_LATITUDE: num({ default: 42.6459136 }),
 		DEFAULT_LONGITUDE: num({ default: 23.3332736 }),
 
-		NO_INTERNET_LOGO: str({ default: 'assets/images/ever-logo.svg' }),
+		NO_INTERNET_LOGO: str({ default: 'assets/images/logo.jpg' }),
 
 		MAP_MERCHANT_ICON_LINK: str({
 			default: 'http://maps.google.com/mapfiles/kml/pal3/icon21.png',
@@ -89,15 +89,17 @@ export const env: Env = cleanEnv(
 			default: 'https://api.cloudinary.com/v1_1/evereq/upload',
 		}),
 
-		COMPANY_NAME: str({ default: 'Ever Co. LTD' }),
-		COMPANY_SITE_LINK: str({ default: 'https://ever.co/' }),
-		COMPANY_GITHUB_LINK: str({ default: 'https://github.com/ever-co' }),
-		COMPANY_FACEBOOK_LINK: str({
-			default: 'https://www.facebook.com/evercoapp',
+		COMPANY_NAME: str({ default: 'كوكب' }),
+		COMPANY_SITE_LINK: str({ default: 'https://kawkab.systems/' }),
+		COMPANY_GITHUB_LINK: str({
+			default: 'https://github.com/asimnet/ever-co',
 		}),
-		COMPANY_TWITTER_LINK: str({ default: 'https://twitter.com/evercoapp' }),
+		COMPANY_FACEBOOK_LINK: str({
+			default: '',
+		}),
+		COMPANY_TWITTER_LINK: str({ default: '' }),
 		COMPANY_LINKEDIN_LINK: str({
-			default: 'https://www.linkedin.com/company/ever-co.',
+			default: '',
 		}),
 
 		GENERATE_PASSWORD_CHARSET: str({
@@ -105,7 +107,7 @@ export const env: Env = cleanEnv(
 				'abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$_',
 		}),
 
-		CURRENCY_SYMBOL: str({ default: '$' }),
+		CURRENCY_SYMBOL: str({ default: 'ريال' }),
 
 		// For maintenance micro service. Ever maintanance API URL: https://maintenance.ever.co/status
 		SETTINGS_APP_TYPE: str({ default: 'admin' }),

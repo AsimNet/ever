@@ -58,16 +58,14 @@ export const env: Env = cleanEnv(
 				'http://res.cloudinary.com/evereq/image/upload/v1536843011/everbie-products-images/btzn3o8pimhercepno2d.png',
 		}),
 
-		LOGIN_LOGO: str({ default: 'assets/imgs/ever-logo.svg' }),
-		NO_INTERNET_LOGO: str({ default: 'assets/imgs/ever-logo.svg' }),
+		LOGIN_LOGO: str({ default: 'assets/imgs/logo.jpg' }),
+		NO_INTERNET_LOGO: str({ default: 'assets/imgs/logo.jpg' }),
 
-		COMPANY_NAME: str({ default: 'Ever Co. LTD' }),
-		APP_NAME: str({ default: 'Ever® Carrier' }),
+		COMPANY_NAME: str({ default: 'كوكب' }),
+		APP_NAME: str({ default: 'كباتن كوكب' }),
 
 		DEFAULT_LOGIN_USERNAME: str({ default: 'ever' }),
 		DEFAULT_LOGIN_PASSWORD: str({ default: 'changeme' }),
-
-		GOOGLE_MAPS_API_KEY: str({ default: '' }),
 
 		GOOGLE_ANALYTICS_API_KEY: str({ default: '' }),
 		FAKE_UUID: str({ default: uuid() }),
@@ -81,13 +79,20 @@ export const env: Env = cleanEnv(
 		DEFAULT_LANGUAGE: str({ default: 'en' }),
 
 		// Graphql endpoints for apollo services
-		GQL_ENDPOINT: str({ default: 'http://localhost:5555/graphql' }),
-		GQL_SUBSCRIPTIONS_ENDPOINT: str({
-			default: 'ws://localhost:5050/subscriptions',
+		SERVICES_ENDPOINT: str({ default: 'https://api.kawkab.systems:5501' }),
+		HTTPS_SERVICES_ENDPOINT: str({
+			default: 'https://api.kawkab.systems:5501',
 		}),
-		SERVICES_ENDPOINT: str({ default: 'http://localhost:5500' }),
-		HTTPS_SERVICES_ENDPOINT: str({ default: 'https://localhost:5501' }),
+		GQL_ENDPOINT: str({
+			default: 'https://graphql.kawkab.systems/graphql',
+		}),
+		GQL_SUBSCRIPTIONS_ENDPOINT: str({
+			default: 'wss://api.kawkab.systems:5050/subscriptions',
+		}),
 
+		GOOGLE_MAPS_API_KEY: str({
+			default: 'AIzaSyDceGm3Xyev6wKEO4dz4dsn1wB6qQgeWjw',
+		}),
 		// For maintenance micro service. Ever maintanance API URL: https://maintenance.ever.co/status
 		SETTINGS_APP_TYPE: str({ default: 'carrier-mobile' }),
 		SETTINGS_MAINTENANCE_API_URL: str({
