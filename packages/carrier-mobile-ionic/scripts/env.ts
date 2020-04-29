@@ -96,8 +96,8 @@ export const env: Env = cleanEnv(
 		}),
 		DELIVERY_TIME_MIN: num({ default: 30 }),
 		DELIVERY_TIME_MAX: num({ default: 60 }),
-		DEFAULT_LATITUDE: str({ default: process.env.DEFAULT_LATITUDE }),
-		DEFAULT_LONGITUDE: str({ default: process.env.DEFAULT_LONGITUDE }),
+		DEFAULT_LATITUDE: num({ default: +process.env.DEFAULT_LATITUDE }),
+		DEFAULT_LONGITUDE: num({ default: +process.env.DEFAULT_LONGITUDE }),
 
 		DEFAULT_LANGUAGE: str({ default: 'en-US' }),
 		WEB_CONCURRENCY: num({ default: 1 }),
