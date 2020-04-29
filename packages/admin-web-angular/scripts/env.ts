@@ -65,7 +65,7 @@ export const env: Env = cleanEnv(
 		}),
 
 		GOOGLE_MAPS_API_KEY: str({
-			default: 'AIzaSyAyDd9oMAzGCeH5kkmqubXaqb6VTL_pzXI',
+			default: 'AIzaSyCcnNlu8Bc10dWe907KTRqWXhyBvm-XOww',
 		}),
 
 		DEFAULT_LATITUDE: num({ default: 42.6459136 }),

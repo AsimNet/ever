@@ -57,7 +57,7 @@ export const env: Env = cleanEnv(
 		NO_INTERNET_LOGO: str({ default: 'assets/img/ever-logo.svg' }),
 
 		GOOGLE_MAPS_API_KEY: str({
-			default: 'AIzaSyAyDd9oMAzGCeH5kkmqubXaqb6VTL_pzXI',
+			default: 'AIzaSyCcnNlu8Bc10dWe907KTRqWXhyBvm-XOww',
 		}),
 
 		DELIVERY_TIME_MIN: num({ default: 30 }),
