@@ -53,23 +53,27 @@ export const env: Env = cleanEnv(
 	{
 		production: bool({ default: false }),
 
-		SERVICES_ENDPOINT: str({ default: 'https://api.kawkab.systems:5501' }),
+		SERVICES_ENDPOINT: str({ default: process.env.SERVICES_ENDPOINT }),
 		HTTPS_SERVICES_ENDPOINT: str({
-			default: 'https://api.kawkab.systems:5501',
+			default: process.env.HTTPS_SERVICES_ENDPOINT,
 		}),
 		GQL_ENDPOINT: str({
-			default: 'https://graphql.kawkab.systems/graphql',
+			default: process.env.GQL_ENDPOINT,
 		}),
 		GQL_SUBSCRIPTIONS_ENDPOINT: str({
-			default: 'wss://api.kawkab.systems:5050/subscriptions',
+			default: process.env.GQL_SUBSCRIPTIONS_ENDPOINT,
 		}),
 
 		GOOGLE_MAPS_API_KEY: str({
-			default: 'AIzaSyDceGm3Xyev6wKEO4dz4dsn1wB6qQgeWjw',
+			default: process.env.GOOGLE_MAPS_API_KEY,
 		}),
 
-		DEFAULT_LATITUDE: num({ default: 42.6459136 }),
-		DEFAULT_LONGITUDE: num({ default: 23.3332736 }),
+		DEFAULT_LATITUDE: num({
+			default: Number(process.env.DEFAULT_LATITUDE),
+		}),
+		DEFAULT_LONGITUDE: num({
+			default: Number(process.env.DEFAULT_LONGITUDE),
+		}),
 
 		NO_INTERNET_LOGO: str({ default: 'assets/images/logo.jpg' }),
 
@@ -103,8 +107,7 @@ export const env: Env = cleanEnv(
 		}),
 
 		GENERATE_PASSWORD_CHARSET: str({
-			default:
-				'abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$_',
+			default: process.env.GENERATE_PASSWORD_CHARSET,
 		}),
 
 		CURRENCY_SYMBOL: str({ default: 'ريال' }),
@@ -118,7 +121,7 @@ export const env: Env = cleanEnv(
 		DEFAULT_LANGUAGE: str({ default: 'en-US' }),
 
 		WEB_CONCURRENCY: num({ default: 1 }),
-		WEB_MEMORY: num({ default: 2048 }),
+		WEB_MEMORY: num({ default: 4096 }),
 		PORT: num({ default: 4200 }),
 	},
 	{ strict: true, dotEnvPath: __dirname + '/../.env' }
