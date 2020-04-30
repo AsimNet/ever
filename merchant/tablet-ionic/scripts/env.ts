@@ -74,7 +74,7 @@ export const env: Env = cleanEnv(
 		DEFAULT_LOGIN_PASSWORD: str({ default: '123456' }),
 
 		LOGIN_LOGO: str({ default: 'assets/imgs/logo.jpg' }),
-		NO_INTERNET_LOGO: str({ default: 'assets/imgs/logo.png' }),
+		NO_INTERNET_LOGO: str({ default: 'assets/imgs/logo.jpg' }),
 
 		COMPANY_NAME: str({ default: 'كوكب' }),
 		APP_NAME: str({ default: 'Ever Merchant' }),

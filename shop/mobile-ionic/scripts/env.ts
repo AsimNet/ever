@@ -99,7 +99,7 @@ export const env: Env = cleanEnv(
 		}),
 
 		INVITE_BY_CODE_LOGO: str({ default: 'assets/imgs/logo.jpg' }),
-		NO_INTERNET_LOGO: str({ default: 'assets/imgs/logo.png' }),
+		NO_INTERNET_LOGO: str({ default: 'assets/imgs/logo.jpg' }),
 
 		COMPANY_NAME: str({ default: 'كوكب' }),
 
