@@ -2,7 +2,7 @@
 <widget id="co.ever.customer" version="0.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>ever.shop.mobile</name>
     <description>Ever Mobile Shop App</description>
-    <author email="ever@ever.co" href="https://ever.co/">Ever Co. LTD</author>
+    <author email="ever@ever.co" href="https://ever.co/">كوكب</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="*" />

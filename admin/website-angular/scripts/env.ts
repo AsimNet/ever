@@ -53,19 +53,29 @@ export const env: Env = cleanEnv(
 	{
 		production: bool({ default: false }),
 
-		SERVICES_ENDPOINT: str({ default: 'http://localhost:5500' }),
-		HTTPS_SERVICES_ENDPOINT: str({ default: 'https://localhost:5501' }),
-		GQL_ENDPOINT: str({ default: 'http://localhost:5555/graphql' }),
+		SERVICES_ENDPOINT: str({ default: process.env.SERVICES_ENDPOINT }),
+		HTTPS_SERVICES_ENDPOINT: str({
+			default: process.env.HTTPS_SERVICES_ENDPOINT
+		}),
+		GQL_ENDPOINT: str({
+			default: process.env.GQL_ENDPOINT
+		}),
 		GQL_SUBSCRIPTIONS_ENDPOINT: str({
-			default: 'ws://localhost:5050/subscriptions'
+			default: process.env.GQL_SUBSCRIPTIONS_ENDPOINT
 		}),
 
-		GOOGLE_MAPS_API_KEY: str({ default: '' }),
+		GOOGLE_MAPS_API_KEY: str({
+			default: process.env.GOOGLE_MAPS_API_KEY
+		}),
 
-		DEFAULT_LATITUDE: num({ default: 42.6459136 }),
-		DEFAULT_LONGITUDE: num({ default: 23.3332736 }),
+		DEFAULT_LATITUDE: num({
+			default: Number(process.env.DEFAULT_LATITUDE)
+		}),
+		DEFAULT_LONGITUDE: num({
+			default: Number(process.env.DEFAULT_LONGITUDE)
+		}),
 
-		NO_INTERNET_LOGO: str({ default: 'assets/images/ever-logo.svg' }),
+		NO_INTERNET_LOGO: str({ default: 'assets/images/logo.jpg' }),
 
 		MAP_MERCHANT_ICON_LINK: str({
 			default: 'http://maps.google.com/mapfiles/kml/pal3/icon21.png'
@@ -83,23 +93,24 @@ export const env: Env = cleanEnv(
 			default: 'https://api.cloudinary.com/v1_1/evereq/upload'
 		}),
 
-		COMPANY_NAME: str({ default: 'Ever Co. LTD' }),
-		COMPANY_SITE_LINK: str({ default: 'https://ever.co/' }),
-		COMPANY_GITHUB_LINK: str({ default: 'https://github.com/ever-co' }),
-		COMPANY_FACEBOOK_LINK: str({
-			default: 'https://www.facebook.com/evercoapp'
+		COMPANY_NAME: str({ default: 'كوكب' }),
+		COMPANY_SITE_LINK: str({ default: 'https://kawkab.systems/' }),
+		COMPANY_GITHUB_LINK: str({
+			default: 'https://github.com/asimnet/ever-co'
 		}),
-		COMPANY_TWITTER_LINK: str({ default: 'https://twitter.com/evercoapp' }),
+		COMPANY_FACEBOOK_LINK: str({
+			default: ''
+		}),
+		COMPANY_TWITTER_LINK: str({ default: '' }),
 		COMPANY_LINKEDIN_LINK: str({
-			default: 'https://www.linkedin.com/company/ever-co.'
+			default: ''
 		}),
 
 		GENERATE_PASSWORD_CHARSET: str({
-			default:
-				'abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$_'
+			default: process.env.GENERATE_PASSWORD_CHARSET
 		}),
 
-		CURRENCY_SYMBOL: str({ default: '$' }),
+		CURRENCY_SYMBOL: str({ default: 'ريال' }),
 
 		// For maintenance micro service. Ever maintanance API URL: https://maintenance.ever.co/status
 		SETTINGS_APP_TYPE: str({ default: 'admin' }),
@@ -107,10 +118,10 @@ export const env: Env = cleanEnv(
 			default: ''
 		}),
 
-		DEFAULT_LANGUAGE: str({ default: 'en' }),
+		DEFAULT_LANGUAGE: str({ default: 'en-US' }),
 
 		WEB_CONCURRENCY: num({ default: 1 }),
-		WEB_MEMORY: num({ default: 2048 }),
+		WEB_MEMORY: num({ default: 4096 }),
 		PORT: num({ default: 4200 })
 	},
 	{ strict: true, dotEnvPath: __dirname + '/../.env' }

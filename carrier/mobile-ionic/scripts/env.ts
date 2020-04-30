@@ -58,44 +58,50 @@ export const env: Env = cleanEnv(
 				'http://res.cloudinary.com/evereq/image/upload/v1536843011/everbie-products-images/btzn3o8pimhercepno2d.png'
 		}),
 
-		LOGIN_LOGO: str({ default: 'assets/imgs/ever-logo.svg' }),
-		NO_INTERNET_LOGO: str({ default: 'assets/imgs/ever-logo.svg' }),
+		LOGIN_LOGO: str({ default: 'assets/imgs/logo.jpg' }),
+		NO_INTERNET_LOGO: str({ default: 'assets/imgs/logo.jpg' }),
 
-		COMPANY_NAME: str({ default: 'Ever Co. LTD' }),
-		APP_NAME: str({ default: 'Ever® Carrier' }),
+		COMPANY_NAME: str({ default: 'كوكب' }),
+		APP_NAME: str({ default: 'كباتن كوكب' }),
 
-		DEFAULT_LOGIN_USERNAME: str({ default: 'ever' }),
-		DEFAULT_LOGIN_PASSWORD: str({ default: 'changeme' }),
+		DEFAULT_LOGIN_USERNAME: str({ default: '' }),
+		DEFAULT_LOGIN_PASSWORD: str({ default: '' }),
 
-		GOOGLE_MAPS_API_KEY: str({ default: '' }),
-
-		GOOGLE_ANALYTICS_API_KEY: str({ default: '' }),
+		GOOGLE_ANALYTICS_API_KEY: str({
+			default: process.env.GOOGLE_ANALYTICS_API_KEY
+		}),
 		FAKE_UUID: str({ default: uuid() }),
 
 		// Not secret MixPanel Token
-		MIXPANEL_API_KEY: str({ default: '' }),
-
-		DEFAULT_LATITUDE: num({ default: 42.6459136 }),
-		DEFAULT_LONGITUDE: num({ default: 23.3932736 }),
-
-		DEFAULT_LANGUAGE: str({ default: 'en' }),
-
-		// Graphql endpoints for apollo services
-		GQL_ENDPOINT: str({ default: 'http://localhost:5555/graphql' }),
-		GQL_SUBSCRIPTIONS_ENDPOINT: str({
-			default: 'ws://localhost:5050/subscriptions'
+		MIXPANEL_API_KEY: str({ default: process.env.MIXPANEL_API_KEY }),
+		SERVICES_ENDPOINT: str({ default: process.env.SERVICES_ENDPOINT }),
+		HTTPS_SERVICES_ENDPOINT: str({
+			default: process.env.HTTPS_SERVICES_ENDPOINT
 		}),
-		SERVICES_ENDPOINT: str({ default: 'http://localhost:5500' }),
-		HTTPS_SERVICES_ENDPOINT: str({ default: 'https://localhost:5501' }),
+		GQL_ENDPOINT: str({
+			default: process.env.GQL_ENDPOINT
+		}),
+		GQL_SUBSCRIPTIONS_ENDPOINT: str({
+			default: process.env.GQL_SUBSCRIPTIONS_ENDPOINT
+		}),
+
+		GOOGLE_MAPS_API_KEY: str({
+			default: process.env.GOOGLE_MAPS_API_KEY
+		}),
 
 		// For maintenance micro service. Ever maintanance API URL: https://maintenance.ever.co/status
 		SETTINGS_APP_TYPE: str({ default: 'carrier-mobile' }),
 		SETTINGS_MAINTENANCE_API_URL: str({
 			default: ''
 		}),
+		DELIVERY_TIME_MIN: num({ default: 30 }),
+		DELIVERY_TIME_MAX: num({ default: 60 }),
+		DEFAULT_LATITUDE: num({ default: +process.env.DEFAULT_LATITUDE }),
+		DEFAULT_LONGITUDE: num({ default: +process.env.DEFAULT_LONGITUDE }),
 
+		DEFAULT_LANGUAGE: str({ default: 'en-US' }),
 		WEB_CONCURRENCY: num({ default: 1 }),
-		WEB_MEMORY: num({ default: 2048 }),
+		WEB_MEMORY: num({ default: 4096 }),
 		PORT: num({ default: 4203 })
 	},
 	{ strict: true, dotEnvPath: __dirname + '/../.env' }

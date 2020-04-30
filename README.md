@@ -1,4 +1,4 @@
-#### *** If you are running IT Company, check our new project [Gauzy](https://github.com/ever-co/gauzy) ***
+#### **_ If you are running IT Company, check our new project [Gauzy](https://github.com/ever-co/gauzy) _**
 
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/ever)
 [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/ever-co/ever?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -41,7 +41,7 @@ You can also track feature requests from the community in the [separate repo](ht
 
 ### Disclaimer
 
-_A word of caution_: We are in α (alpha), i.e. Ever® Platform™ is very much under development (work in progress, WIP).  
+_A word of caution_: We are in α (alpha), i.e. Ever® Platform™ is very much under development (work in progress, WIP).
 Expect _lots_ of changes and some :bug: and please be nice! :stuck_out_tongue_winking_eye:
 
 ## Technology Stack and Requirements
@@ -155,12 +155,12 @@ See relevant section in our [documentation](https://github.com/ever-co/ever/wiki
 
 Finally, each project from Ever Platform could start by single command from this list:
 
-* Run API server `yarn run:server`
-* Run Admin Website `yarn run:admin` and open http://localhost:4200
-* Run Shopping Mobile App `yarn run:shopmobile` and open http://localhost:4201
-* Run Merchant Ionic Tablet App `yarn run:merchant` and open http://localhost:4202
-* Run Carrier Mobile app `yarn run:carrier` and open http://localhost:4203
-* Run Shopping Website `yarn run:shopweb` and open http://localhost:3000
+-   Run API server `yarn run:server`
+-   Run Admin Website `yarn run:admin` and open http://localhost:4200
+-   Run Shopping Mobile App `yarn run:shopmobile` and open http://localhost:4201
+-   Run Merchant Ionic Tablet App `yarn run:merchant` and open http://localhost:4202
+-   Run Carrier Mobile app `yarn run:carrier` and open http://localhost:4203
+-   Run Shopping Website `yarn run:shopweb` and open http://localhost:3000
 
 Note 1: during development you can run server with `yarn run:server:dev` to enable watch on TS files changes
 
@@ -228,8 +228,8 @@ View full list of our [contributors](https://github.com/ever-co/ever/graphs/cont
 
 ## Security
 
-Ever Platform follows good security practices, but 100% security cannot be guaranteed in any software!  
-Ever Platform is provided AS IS without any warranty. Use at your own risk!  
+Ever Platform follows good security practices, but 100% security cannot be guaranteed in any software!
+Ever Platform is provided AS IS without any warranty. Use at your own risk!
 See more details in the [LICENSE.md](LICENSE.md).
 
 In a production setup, all client-side to server-side (backend, APIs) communications should be encrypted using HTTPS/WSS/SSL (REST APIs, GraphQL endpoint, Socket.io WebSockets, etc.).
@@ -237,9 +237,10 @@ In a production setup, all client-side to server-side (backend, APIs) communicat
 ## License
 
 This software is available under following licenses:
-- [Ever® Platform Community™ Edition](https://github.com/ever-co/ever/blob/master/LICENSE.md#ever-platform-community-edition-license)
-- [Ever® Platform Small Business™](https://github.com/ever-co/ever/blob/master/LICENSE.md#ever-platform-small-business-license)
-- [Ever® Platform Enterprise™](https://github.com/ever-co/ever/blob/master/LICENSE.md#ever-platform-enterprise-license)
+
+-   [Ever® Platform Community™ Edition](https://github.com/ever-co/ever/blob/master/LICENSE.md#ever-platform-community-edition-license)
+-   [Ever® Platform Small Business™](https://github.com/ever-co/ever/blob/master/LICENSE.md#ever-platform-small-business-license)
+-   [Ever® Platform Enterprise™](https://github.com/ever-co/ever/blob/master/LICENSE.md#ever-platform-enterprise-license)
 
 #### The default Ever® Platform™ license, without a valid Ever® Platform Enterprise™ or Ever® Platform Small Business™ License agreement, is the Ever® Platform Community™ Edition License.
 
@@ -249,14 +250,14 @@ This software is available under following licenses:
 
 ## Trademarks
 
-**Ever**® is a registered trademark of [Ever Co. LTD](https://ever.co).  
-**Ever® Platform™**, **Ever® Platform Community™**, **Ever® Platform Small Business™** and **Ever® Platform Enterprise™** are all trademarks of [Ever Co. LTD](https://ever.co).
+**Ever**® is a registered trademark of [كوكب](https://ever.co).
+**Ever® Platform™**, **Ever® Platform Community™**, **Ever® Platform Small Business™** and **Ever® Platform Enterprise™** are all trademarks of [كوكب](https://ever.co).
 
-The trademarks may only be used with the written permission of Ever Co. LTD. and may not be used to promote or otherwise market competitive products or services.
+The trademarks may only be used with the written permission of كوكب. and may not be used to promote or otherwise market competitive products or services.
 
 All other brand and product names are trademarks, registered trademarks or service marks of their respective holders.
 
-#### Copyright © 2016-present, Ever Co. LTD. All rights reserved.
+#### Copyright © 2016-present, كوكب. All rights reserved.
 
 [![Circle CI](https://circleci.com/gh/ever-co/ever.svg?style=svg)](https://circleci.com/gh/ever-co/ever)
 [![codecov](https://codecov.io/gh/ever-co/ever/branch/master/graph/badge.svg)](https://codecov.io/gh/ever-co/ever)
@@ -267,4 +268,4 @@ All other brand and product names are trademarks, registered trademarks or servi
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fever-co%2Fever.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fever-co%2Fever?ref=badge_shield)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io)
 
-#### *** If you are running IT Company, check our new project [Gauzy](https://github.com/ever-co/gauzy) ***
+#### **_ If you are running IT Company, check our new project [Gauzy](https://github.com/ever-co/gauzy) _**

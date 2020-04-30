@@ -37,34 +37,37 @@ export const env: Env = cleanEnv(
 	{
 		production: bool({ default: false }),
 
-		DEFAULT_LATITUDE: num({ default: 42.6459136 }),
-		DEFAULT_LONGITUDE: num({ default: 23.3332736 }),
-
-		DEFAULT_LANGUAGE: str({ default: 'en' }),
-
-		SERVICES_ENDPOINT: str({ default: 'http://localhost:5500' }),
-		HTTPS_SERVICES_ENDPOINT: str({ default: 'https://localhost:5501' }),
-		GQL_ENDPOINT: str({ default: 'http://localhost:5555/graphql' }),
+		SERVICES_ENDPOINT: str({ default: process.env.SERVICES_ENDPOINT }),
+		HTTPS_SERVICES_ENDPOINT: str({
+			default: process.env.HTTPS_SERVICES_ENDPOINT
+		}),
+		GQL_ENDPOINT: str({
+			default: process.env.GQL_ENDPOINT
+		}),
 		GQL_SUBSCRIPTIONS_ENDPOINT: str({
-			default: 'ws://localhost:5050/subscriptions'
+			default: process.env.GQL_SUBSCRIPTIONS_ENDPOINT
 		}),
 
-		AUTH_LOGO: str({ default: 'assets/img/ever-logo.svg' }),
-		NO_INTERNET_LOGO: str({ default: 'assets/img/ever-logo.svg' }),
+		AUTH_LOGO: str({ default: 'assets/img/logo.jpg' }),
+		NO_INTERNET_LOGO: str({ default: 'assets/img/logo.jpg' }),
 
-		GOOGLE_MAPS_API_KEY: str({ default: '' }),
-
-		DELIVERY_TIME_MIN: num({ default: 30 }),
-		DELIVERY_TIME_MAX: num({ default: 60 }),
+		GOOGLE_MAPS_API_KEY: str({
+			default: process.env.GOOGLE_MAPS_API_KEY
+		}),
 
 		// For maintenance micro service. Ever maintanance API URL: https://maintenance.ever.co/status
 		SETTINGS_APP_TYPE: str({ default: 'shop-web' }),
 		SETTINGS_MAINTENANCE_API_URL: str({
 			default: ''
 		}),
+		DELIVERY_TIME_MIN: num({ default: 30 }),
+		DELIVERY_TIME_MAX: num({ default: 60 }),
+		DEFAULT_LATITUDE: num({ default: +process.env.DEFAULT_LATITUDE }),
+		DEFAULT_LONGITUDE: num({ default: +process.env.DEFAULT_LONGITUDE }),
 
+		DEFAULT_LANGUAGE: str({ default: 'en-US' }),
 		WEB_CONCURRENCY: num({ default: 1 }),
-		WEB_MEMORY: num({ default: 2048 }),
+		WEB_MEMORY: num({ default: 4096 }),
 		PORT: num({ default: 3000 })
 	},
 	{ strict: true, dotEnvPath: __dirname + '/../.env' }

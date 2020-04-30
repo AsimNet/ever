@@ -1,6 +1,6 @@
 # License
 
-Copyright © 2016-present, Ever Co. LTD. All rights reserved.
+Copyright © 2016-present, كوكب. All rights reserved.
 
 This software is available under different licenses
 
@@ -24,7 +24,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 ### _Ever Platform Enterprise_ License
 
-Alternatively, commercial versions of the software must be used in accordance with the terms and conditions of separate written agreement between you and Ever Co. LTD.
+Alternatively, commercial versions of the software must be used in accordance with the terms and conditions of separate written agreement between you and كوكب.
 
 For more information about Ever Platform Enterprise License please contact <mailto:ever@ever.co>.
 
@@ -36,6 +36,6 @@ Please see [CREDITS.md](CREDITS.md) file for a list of libraries and software in
 
 ## Trademarks
 
-**Ever**® is a registered trademark of [Ever Co. LTD](https://ever.co).
-The trademark may only be used with the written permission of Ever Co. LTD. and may not be used to promote or otherwise market competitive products or services.
+**Ever**® is a registered trademark of [كوكب](https://ever.co).
+The trademark may only be used with the written permission of كوكب. and may not be used to promote or otherwise market competitive products or services.
 All other brand and product names are trademarks, registered trademarks or service marks of their respective holders.
